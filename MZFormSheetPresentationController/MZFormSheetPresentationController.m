@@ -242,11 +242,11 @@ CGFloat const MZFormSheetPresentationControllerDefaultAboveKeyboardMargin = 20;
 #if TARGET_OS_TV || MZ_APP_EXTENSIONS
     return self.landscapeTopInset;
 #else
-    if (UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation)) {
+    /*if (UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation)) {
         return self.portraitTopInset + [self yCoordinateBelowStatusBar];
     } else {
         return self.landscapeTopInset + [self yCoordinateBelowStatusBar];
-    }
+    }*/
 #endif
 }
 
